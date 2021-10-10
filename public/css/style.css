@@ -8,6 +8,14 @@ h1 {
     font-size: 18px;
     margin: 16px 0;
     padding-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+h1 > a {
+    font-size: 16px;
+    font-weight: normal;
+    margin-left: auto;
 }
 
 li {
@@ -21,4 +29,34 @@ li {
 
 p {
     line-height: 1.6;
+}
+
+input,
+textarea {
+    padding: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 160px;
+}
+
+button {
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-button {
+    text-align: right;
+}
+
+.error {
+    color: red;
+    font-size: 14px;
+    margin-top: 8px;
 }
