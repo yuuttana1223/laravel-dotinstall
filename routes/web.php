@@ -20,3 +20,7 @@ Route::get("/posts/{post}/edit", [PostController::class, "edit"])
 Route::patch("/posts/{post}/update", [PostController::class, "update"])
     ->name("posts.update")
     ->where("post", "[0-9]+");
+
+Route::delete("/posts/{post}/destroy", [PostController::class, "destroy"])
+    ->name("posts.destroy")
+    ->where("post", "[0-9]+");

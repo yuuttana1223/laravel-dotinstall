@@ -1,3 +1,7 @@
+a {
+    text-decoration: none;
+}
+
 .container {
     width: 480px;
     margin: 40px auto;
@@ -59,4 +63,13 @@ button {
     color: red;
     font-size: 14px;
     margin-top: 8px;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    font-weight: normal;
+    color: #15c;
+    cursor: pointer;
+    vertical-align: 1px;
 }
