@@ -1,0 +1,24 @@
+.container {
+    width: 480px;
+    margin: 40px auto;
+}
+
+h1 {
+    border-bottom: 1px solid;
+    font-size: 18px;
+    margin: 16px 0;
+    padding-bottom: 8px;
+}
+
+li {
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.back-link {
+    font-size: 14px;
+}
+
+p {
+    line-height: 1.6;
+}
