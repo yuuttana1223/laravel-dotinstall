@@ -22,9 +22,18 @@ h1 > a {
     margin-left: auto;
 }
 
+h2 {
+    font-size: 16px;
+    margin-top: 40px;
+}
+
 li {
     line-height: 1.6;
     margin-bottom: 8px;
+}
+
+li:first-of-type {
+    list-style: none;
 }
 
 .back-link {
@@ -72,4 +81,16 @@ button {
     color: #15c;
     cursor: pointer;
     vertical-align: 1px;
+}
+
+.comment-form {
+    display: flex;
+}
+
+.comment-form > button {
+    margin-left: 8px;
+}
+
+.delete-comment {
+    display: inline-block;
 }

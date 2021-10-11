@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\PostRequest;
 use App\Models\Post;
-use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
@@ -19,7 +18,10 @@ class PostController extends Controller
     public function show(Post $post)
     {
         return view("posts.show")
-            ->with(["post" => $post]);
+            ->with([
+                "post" => $post,
+                "comments" => $post->comments()->latest()->get()
+            ]);
     }
 
     public function create()
